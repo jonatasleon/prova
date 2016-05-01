@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="trackerMoviesApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Tracker Movies</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script src="assets/lib/angular/angular.js"></script>
+        <script src="assets/lib/angular-route/angular-route.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/config/routeConfig.js"></script>
+        <script src="assets/js/controller/mainController.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="container">
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#/">
+                                <h2>Tracker Movies</h2>
+                            </a>
+                        </li>
+                        <li class="pull-right">
+                            <a href="#/">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <article class="container">
+                <ng-view></ng-view>
+            </article>
+        </div>
+        <footer></footer>
+    </body>
+</html>
