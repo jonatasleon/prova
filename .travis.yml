@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '4'
 branches:
-    only: dev
+    only: master
 before_script:
 - npm install -g gulp
 - npm install -g bower
