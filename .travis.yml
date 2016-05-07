@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '4'
+branches:
+    only: dev
+before_script:
+- npm install -g gulp
+- npm install -g bower
+- bower install
+script: bash ./deploy.sh
+env:
+    global:
+    - GH_REF: github.com/jonatasleon/tracker-movies.github.io.git
+    - secure: "jMbPi5t3haXA2X3JUYuMIiKK/eQ2Rw/PMF6yNkN0PiYtwKgrCHBnsspRq2sHju7XkMYDARyzkUUaxRzZyvaF/gwPiIK/uXu5Kj6p9RC3nysluXEYt5XBF2C2OKRdW4a8BbQf8BcsZlDzpfCUj4xb1KJ6GlncZEL0lBoQ5IIGrByyzkL34xeR336DWNWDdVQRQFWRxuBfIiRrvvmC7HODMvjczlwL+dpOdFXp4YVFmXdY/Qj5SPBgvbCjyqlAKA+F2u+14J9H4KEXdDidFFn2fFvQbtMrlaTUD8mWeJxBxPL3Rb6beAtka6yY0nClsqOSFN4unN+FY+byZfWL81okLDzEQZrYJjByJiYSlKT+3oy+gnoIPttfU0/gRQUf1hh7k7ozcv2NO9o7dB/lQLvyZO4h9bWYbND2imd5kORNWGHtwwOyYp2w/loPXNB+Cqw09waQS4qZViteb0qw9icEfcaRWIYTh2mIWYtu//Gj0hSFgVFapsKqS1eF1exePY08wA4WjPO1x5iwumPQd34pTcnjhxwOdHgz6RLbqoMeFqb4Jo9+fCWyNN4uB/zD4Pk6MtpkbgTkHzw9LpiFlmsTk+Kq7aB984q+mRH6bhB/UdnxG6jlvVOvvR2YnR2nncheeLIh4q+6FX8JAAmwxWUC1Yv4VljqS+jxAhbgi6K+PPs="
